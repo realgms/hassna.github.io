@@ -12,7 +12,7 @@
                 <h2>المتابعة الدورية</h2><br>
                 <br>
                 <input type="text" name="text2" placeholder="الرقم المدني" required>
-                <input type="text" name="text1" placeholder="اسم المتوفي" required>
+                <input type="text" id="text1" placeholder="اسم المتوفي" required>
             <br>
             <input type="text" name="text3" placeholder="اسم المستحق" size="70px"><br>
             <input type="text" name="text4" placeholder="اسم الوكيل الشرعي" size="70px"><br>
@@ -53,7 +53,7 @@
            <h5> ٣- وفاه اي من المستحقين، وموافاة الهيئة بشهادة الوفاة. </h5>
            <h5> ٤- زوال صفة الوكيل الشرعي أو الوصي أو القيم عن المستحقين لأي سبب. </h5>
            <h5>- تصرف للابنة التي تتقاضى نصيب من المعاش، في حال زواجها منحة زواج وتصرف هذه المنحة مرة واحدة وتسقط بمرور خمس سنوات على تاريخ الزواج. </h5>
-           <button type="submit" id="btn">ارسال</button>
+           <button id="submit">ارسال</button>
        
         </form>
         </div>
@@ -61,7 +61,7 @@
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <script>
-        var btn = document.getElementById('btn');
+        var btn = document.getElementById('submit');
         btn.addEventListener('click',function(e){
             e.preventDefault()
             var name = document.getElementById('text1').value;
