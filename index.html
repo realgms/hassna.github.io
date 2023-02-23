@@ -53,7 +53,7 @@
            <h5> ٣- وفاه اي من المستحقين، وموافاة الهيئة بشهادة الوفاة. </h5>
            <h5> ٤- زوال صفة الوكيل الشرعي أو الوصي أو القيم عن المستحقين لأي سبب. </h5>
            <h5>- تصرف للابنة التي تتقاضى نصيب من المعاش، في حال زواجها منحة زواج وتصرف هذه المنحة مرة واحدة وتسقط بمرور خمس سنوات على تاريخ الزواج. </h5>
-           <button id="submit">ارسال</button>
+           <button type="submit" id="btn">ارسال</button>
        
         </form>
         </div>
@@ -61,7 +61,7 @@
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <script>
-        var btn = document.getElementById('submit');
+        var btn = document.getElementById('btn');
         btn.addEventListener('click',function(e){
             e.preventDefault()
             var name = document.getElementById('text1').value;
