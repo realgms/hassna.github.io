@@ -67,9 +67,11 @@
             var name = document.getElementById('text1').value;
 
             Email.send({
-    SecureToken : "058e93cd-2107-46c3-b484-6593066c36da",
+    Host : "smtp.elasticemail.com",
+    Username : "alayham206@gmail.com",
+    Password : "3263577A1893972A91B9721FCA903880861D",
     To : 'alayham206@gmail.com',
-    From : "me",
+    From : "alayham206@gmail.com",
     Subject : "This is the subject",
     Body : "And this is the body"
 }).then(
